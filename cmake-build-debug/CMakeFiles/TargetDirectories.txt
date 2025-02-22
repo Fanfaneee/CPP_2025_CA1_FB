@@ -1,0 +1,3 @@
+C:/Users/fanfa/CLionProjects/CA1/cmake-build-debug/CMakeFiles/CA1.dir
+C:/Users/fanfa/CLionProjects/CA1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fanfa/CLionProjects/CA1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
