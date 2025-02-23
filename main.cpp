@@ -94,11 +94,34 @@ void display(const vector<projectCrochet> &projects) {
     }
 }
 
+int findIndexOf(const vector<projectCrochet> &projects, string name) {
+    for (size_t i = 0; i < projects.size(); i++) {
+        if (projects[i].name == name) {
+            return i;
+        }
+    }
+    return -1;
+
+}
+
+
 int main() {
     vector<projectCrochet> projects;
     string filename = "./cmake-build-debug/data.csv";
     load(filename,projects);
     display(projects);
+    string nameSearch;
+    cout<< "Entrez le nom du projet recherché :";
+    getline(cin, nameSearch);
+    int index = findIndexOf(projects, nameSearch);
+
+    if (index != -1) {
+        cout << "Projet trouvé :"<<endl;
+        display({projects[index]});
+    } else {
+        cout << "Projet non trouvé."<<endl;
+    }
+
 
     return 0;
 }
