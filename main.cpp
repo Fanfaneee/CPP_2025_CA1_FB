@@ -68,26 +68,6 @@ void load(string fname, vector<projectCrochet> &data)
 
 
 
-/*
-void display(const projectCrochet &project)
-{
-    cout << left
-             << setw(5)  << project.id
-             << setw(30) << project.name
-             << setw(15) << project.yarnType
-             << setw(10) << project.hookSize
-             << setw(20) << project.stitchType
-             << setw(12) << project.time
-             << setw(10) << project.price
-             << setw(15) << project.finalUse << endl;
-
-
-
-
-}
-*/
-
-
 void display(const vector<projectCrochet> &projects) {
     cout << left
          << setw(5)  << "Id"
