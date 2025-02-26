@@ -67,8 +67,7 @@ void load(string fname, vector<projectCrochet> &data)
     }
 }
 
-
-//question2
+//question1 display
 void display(const vector<projectCrochet> &projects) {
     cout << left
          << setw(5)  << "Id"
@@ -95,6 +94,8 @@ void display(const vector<projectCrochet> &projects) {
     }
 }
 
+//question2 findIndexOf
+
 int findIndexOf(const vector<projectCrochet> &projects, string name) {
     for (size_t i = 0; i < projects.size(); i++) {
         if (projects[i].name == name) {
@@ -117,22 +118,20 @@ map<string, int> mapOfYarnType(vector<projectCrochet> &projects) {
     return yarnType;
 }
 
-//question4
+//question4  filterByFinalUse
 
 vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, const string &category) {
     vector<projectCrochet> filteredProjects;
-
 
     for (size_t i = 0; i < projects.size(); i++) {
         if (projects[i].finalUse == category) {
             filteredProjects.push_back(projects[i]);
         }
     }
-
     return filteredProjects;
 }
 
-//question6
+//question6 matchName
 
 vector<projectCrochet> matchName(vector<projectCrochet> &projects, string stringToMatch) {
     vector<projectCrochet> matchingProject;
@@ -141,7 +140,6 @@ vector<projectCrochet> matchName(vector<projectCrochet> &projects, string string
             matchingProject.push_back(*iter);
         }
     }
-
     return matchingProject;
 
 }
