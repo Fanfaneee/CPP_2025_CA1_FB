@@ -1,6 +1,6 @@
 1,Amigurumi Bunny,Cotton,3.5,Single Crochet,5,8.50,Toy
 2,Granny Square Blanket,Acrylic,4,Granny Square,20,35.00,Blanket
-3,Crochet Beanie,Wool,5,Double Crochet,3,12.00,Accessory
+3,Crochet Beanie,Wool,5,Double Crochet,3,12.50,Accessory
 4,Fingerless Gloves,Merino Wool,4.5,Half Double Crochet,6,15.75,Gloves
 5,Market Bag,Cotton,6,Mesh Stitch,8,22.50,Bag
 6,Dishcloth Set,Cotton,4,Single Crochet,2,5.00,Kitchen
@@ -8,7 +8,7 @@
 8,Baby Booties,Cotton,3,Single Crochet,4,10.00,Baby Clothes
 9,Cowl,Wool,6,Cable Stitch,9,28.00,Accessory
 10,Potholder,Cotton,4,Single Crochet,2,4.00,Kitchen
-11,Crochet Coasters,Cotton,3.5,Single Crochet,2,6.00,Home Decor
+11,Crochet Coasters,Cotton,3.5,Single Crochet,2,6.50,Home Decor
 12,Black Phone Case,Cotton,2.5,Single Crochet,3,7.50,Accessory
 13,Bookmark,Cotton,2,Single Crochet,1,3.00,Gift
 14,Heart Keychain,Cotton,2,Single Crochet,2,4.50,Accessory
@@ -17,36 +17,36 @@
 17,Crochet Belt,Cotton,5,Single Crochet,4,12.00,Accessory
 18,Crochet Rug,T-Shirt Yarn,10,Single Crochet,15,40.00,Home Decor
 19, Basket,Cotton Rope,8,Single Crochet,10,25.00,Home Decor
-20,Crochet Wall Hanging,Cotton Yarn,5,Various Stitches,12,30.00,Home Decor
+20,Crochet Wall Hanging,Cotton Yarn,5,Various Stitches,12,30.50,Home Decor
 21,Crochet Pillow Cover,Cotton,4,Granny Square,8,20.00,Home Decor
 22,Crochet Tea Cozy,Cotton,3.5,Single Crochet,3,8.00,Kitchen
-23,Tree Christmas Ornament,Cotton,2.5,Single Crochet,2,5.00,Holiday Decor
+23,Tree Christmas Ornament,Cotton,2.5,Single Crochet,2,5.50,Holiday Decor
 24,Amigurumi Cat,Cotton,3.5,Single Crochet,6,9.00,Toy
-25,Granny Stripe Blanket,Acrylic,4,Granny Stripe,18,32.00,Blanket
+25,Granny Stripe Blanket,Acrylic,4,Granny Stripe,18,35.50,Blanket
 26,Slouchy Beanie,Wool,5,Double Crochet,4,14.00,Accessory
 27,Wrist Warmers,Merino Wool,4.5,Half Double Crochet,5,13.50,Gloves
 28,Tote Bag,Cotton,6,Single Crochet,10,25.00,Bag
 29,Washcloth Set,Cotton,4,Single Crochet,3,7.00,Kitchen
 30,Infinity Scarf,Acrylic,5.5,Double Crochet,8,20.00,Accessory
-31,White Baby Blanket,Cotton,3,Single Crochet,12,30.00,Blanket
+31,White Baby Blanket,Cotton,3,Single Crochet,12,30.50,Blanket
 32,Neck Warmer,Wool,6,Cable Stitch,5,16.00,Accessory
 33,Hot Pad,Cotton,4,Single Crochet,1,3.00,Kitchen
-34,Cup Cozy,Cotton,3.5,Single Crochet,2,4.00,Home Decor
+34,Cup Cozy,Cotton,3.5,Single Crochet,2,4.50,Home Decor
 35,Key Fob,Cotton,2.5,Single Crochet,1,2.00,Accessory
 36,Hair Clip,Cotton Thread,2,Single Crochet,1,1.50,Accessory
 37,Ear Warmer,Wool,5,Double Crochet,2,7.00,Accessory
 38,Flowers,Cotton,3,Single Crochet,2,5.00,Home Decor
-39,Garland,Cotton,4,Single Crochet,3,8.00,Home Decor
+39,Garland,Cotton,4,Single Crochet,3,8.50,Home Decor
 40,Mobile,Cotton,3,Single Crochet,5,12.00,Baby
-41,Applique,Cotton,2.5,Single Crochet,1,3.00,Craft Supply
+41,Applique,Cotton,2.5,Single Crochet,1,3.50,Craft Supply
 42,Button,Cotton,2,Single Crochet,1,1.00,Sewing Supply
 43,Drawstring Bag,Cotton,5,Single Crochet,6,15.00,Bag
 44,Headband,Cotton,4,Single Crochet,2,6.00,Accessory
-45,Slippers,Wool,6,Double Crochet,7,20.00,Clothing
+45,Slippers,Wool,6,Double Crochet,7,20.50,Clothing
 46,Sweater,Wool,5.5,Various Stitches,25,60.00,Clothing
 47,Cardigan,Acrylic,5,Granny Square,20,45.00,Clothing
 48,Dress,Cotton,4,Various Stitches,30,70.00,Clothing
-49,Skirt,Cotton,4,Single Crochet,15,35.00,Clothing
+49,Skirt,Cotton,4,Single Crochet,15,35.50,Clothing
 50,Shorts,Cotton,5,Single Crochet,10,25.00,Clothing
 51,Top,Cotton,4,Various Stitches,12,30.00,Clothing
 52,Poncho,Acrylic,6,Double Crochet,18,40.00,Clothing
@@ -54,30 +54,30 @@
 54,Cape,Wool,6,Cable Stitch,15,40.00,Clothing
 55,Vest,Acrylic,5,Granny Square,12,30.00,Clothing
 56,Gloves,Merino Wool,4.5,Half Double Crochet,8,20.00,Gloves
-57,Mittens,Wool,5,Double Crochet,6,15.00,Gloves
+57,Mittens,Wool,5,Double Crochet,6,15.50,Gloves
 58,Socks,Wool,4,Single Crochet,5,12.00,Clothing
 59,Leg Warmers,Wool,5.5,Double Crochet,7,18.00,Accessory
 60,Arm Warmers,Merino Wool,4.5,Half Double Crochet,6,16.00,Accessory
 61,Amigurumi Bear,Cotton,3.5,Single Crochet,5,10.00,Toy
-62,Amigurumi Dog,Cotton,3.5,Single Crochet,4,8.00,Toy
+62,Amigurumi Dog,Cotton,3.5,Single Crochet,4,8.50,Toy
 63,Amigurumi White Cat,Cotton,3.5,Single Crochet,6,12.00,Toy
 64,Amigurumi Elephant,Cotton,3.5,Single Crochet,8,15.00,Toy
 65,Amigurumi Giraffe,Cotton,3.5,Single Crochet,7,14.00,Toy
 66,Amigurumi Lion,Cotton,3.5,Single Crochet,9,18.00,Toy
 67,Amigurumi Monkey,Cotton,3.5,Single Crochet,5,11.00,Toy
-68,Amigurumi Owl,Cotton,3.5,Single Crochet,4,9.00,Toy
+68,Amigurumi Owl,Cotton,3.5,Single Crochet,4,9.50,Toy
 69,Amigurumi Penguin,Cotton,3.5,Single Crochet,6,13.00,Toy
-70,Amigurumi Rabbit,Cotton,3.5,Single Crochet,7,16.00,Toy
+70,Amigurumi Rabbit,Cotton,3.5,Single Crochet,7,16.50,Toy
 71,Granny Square Pillow,Acrylic,4,Granny Square,10,25.00,Home Decor
-72,Granny Stripe Throw,Acrylic,4,Granny Stripe,15,35.00,Blanket
+72,Granny Stripe Throw,Acrylic,4,Granny Stripe,15,35.50,Blanket
 73,Granny Ripple Blanket,Acrylic,4,Granny Ripple,18,40.00,Blanket
-74,Granny Hexagon Blanket,Acrylic,4,Granny Hexagon,22,45.00,Blanket
+74,Granny Hexagon Blanket,Acrylic,4,Granny Hexagon,22,45.50,Blanket
 75,Baby Mobile,Cotton,3,Single Crochet,6,15.00,Baby
 76,Rattle,Cotton,3,Single Crochet,2,5.00,Baby
-77,Pacifier Clip,Cotton,2.5,Single Crochet,1,3.00,Baby
+77,Pacifier Clip,Cotton,2.5,Single Crochet,1,3.50,Baby
 78,Teething Ring,Cotton,3,Single Crochet,2,6.00,Baby
 79,Lovey,Cotton,3.5,Single Crochet,4,10.00,Baby
-80,Play Mat,Cotton,4,Single Crochet,10,25.00,Baby
+80,Play Mat,Cotton,4,Single Crochet,10,25.50,Baby
 81,Nursery Decor,Cotton,4,Various,8,20.00,Baby
 82,Baby Blanket,Cotton,4,Granny Square,15,35.00,Blanket
 83,Baby Clothes Set,Cotton,3,Single Crochet,20,50.00,Baby
@@ -86,13 +86,13 @@
 86,Baby Pants,Cotton,3,Single Crochet,5,12.00,Baby
 87,Baby Shoes,Cotton,3,Single Crochet,4,10.00,Baby
 88,Baby Bib,Cotton,4,Single Crochet,2,5.00,Baby
-89,Burp Cloth,Cotton,4,Single Crochet,2,5.00,Baby
+89,Burp Cloth,Cotton,4,Single Crochet,2,5.50,Baby
 90,Washcloths,Cotton,4,Single Crochet,3,7.00,Baby
 91,Towel Set,Cotton,4,Single Crochet,5,15.00,Baby
 92,Diaper Cover,Cotton,4,Single Crochet,3,8.00,Baby
 93,Changing Pad Cover,Cotton,4,Single Crochet,5,12.00,Baby
 94,Stroller Blanket,Cotton,4,Granny Stripe,10,25.00,Baby
-95,Car Seat Cover,Cotton,4,Granny Square,12,30.00,Home Decor
+95,Car Seat Cover,Cotton,4,Granny Square,12,30.50,Home Decor
 96,Play Gym,Cotton,5,Various,15,40.00,Baby
 97,Mobile Toys,Cotton,3,Single Crochet,4,10.00,Baby
 98,Wall Hanging (Nursery),Cotton,4,Various,6,15.00,Baby
@@ -100,14 +100,14 @@
 100,Toy Basket,Cotton Rope,8,Single Crochet,5,15.00,Baby
 101,Coasters,Cotton,3.5,Single Crochet,2,6.00,Home Decor
 102,Phone Case,Cotton,2.5,Single Crochet,3,7.50,Accessory
-103,Vintage Bookmark,Cotton,2,Single Crochet,1,3.00,Gift
+103,Vintage Bookmark,Cotton,2,Single Crochet,1,3.50,Gift
 104,Keychain,Cotton,2,Single Crochet,2,4.50,Accessory
-105,Modern Earrings,Cotton Thread,1.5,Single Crochet,2,5.00,Jewelry
+105,Modern Earrings,Cotton Thread,1.5,Single Crochet,2,5.50,Jewelry
 106,Green Hair Scrunchie,Cotton,4,Single Crochet,1,2.50,Accessory
 107,Brown Belt,Cotton,5,Single Crochet,4,12.00,Accessory
 108,Blue Rug,T-Shirt Yarn,10,Single Crochet,15,40.00,Home Decor
-109,Rope Basket,Cotton Rope,8,Single Crochet,10,25.00,Home Decor
+109,Rope Basket,Cotton Rope,8,Single Crochet,10,25.50,Home Decor
 110,Wall Hanging,Cotton Yarn,5,Various Stitches,12,30.00,Home Decor
 111,Pillow Cover,Cotton,4,Granny Square,8,20.00,Home Decor
-112,Tea Cozy,Cotton,3.5,Single Crochet,3,8.00,Kitchen
+112,Tea Cozy,Cotton,3.5,Single Crochet,3,8.50,Kitchen
 113,Christmas Ornament,Cotton,2.5,Single Crochet,2,5.00,Holiday Decor

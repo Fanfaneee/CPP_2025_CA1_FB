@@ -152,7 +152,18 @@ vector<projectCrochet> matchName(vector<projectCrochet> &projects, string string
 
 
 //question7 sortByPrice
-//fonction qui vas
+//fonction
+void sortByPriceDescending(vector<projectCrochet> &projects) {
+    // Parcours la liste et trie en mettant les plus chers en premier
+    for (size_t i = 0; i < projects.size(); i++) {
+        for (size_t j = i + 1; j < projects.size(); j++) {
+            if (projects[i].price < projects[j].price) { // Si le projet j est plus cher, on échange
+                swap(projects[i], projects[j]);
+            }
+        }
+    }
+}
+
 
 int main() {
     vector<projectCrochet> projects;
@@ -215,6 +226,11 @@ int main() {
     vector<projectCrochet> projectsMatchName = matchName(projects, stringToMatch);
     display(projectsMatchName);
 
+
+//question 7
+    sortByPriceDescending(projects);
+    cout<<"Liste après le tri par prix décroissant"<<endl;
+    display(projects);
 
     return 0;
 
