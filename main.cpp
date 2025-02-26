@@ -131,27 +131,39 @@ vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, 
     return filteredProjects;
 }
 
+//question5
+tuple<int, projectCrochet> analizeTimeOfProjects(vector<projectCrochet> &projects) {
+    vector<projectCrochet> lessTimeProject;
+    vector<projectCrochet> higherTimeProject;
+    vector<projectCrochet>::iterator iter = projects.begin();
+}
+
 //question6 matchName
 
 vector<projectCrochet> matchName(vector<projectCrochet> &projects, string stringToMatch) {
     vector<projectCrochet> matchingProject;
-    for (auto iter = projects.begin(); iter != projects.end(); iter++) {
-        if (iter->name.find(stringToMatch) != string::npos) {
-            matchingProject.push_back(*iter);
+    for (size_t i = 0; i < projects.size(); i++) {
+        if (projects[i].name.find(stringToMatch) != string::npos) {
+            matchingProject.push_back(projects[i]);
         }
     }
     return matchingProject;
-
 }
+
+
+//question7 sortByPrice
+//fonction qui vas
 
 int main() {
     vector<projectCrochet> projects;
     string filename = "./cmake-build-debug/data.csv";
     load(filename,projects);
 
-// Question 2:
+// Question 1 display:
 
     display(projects);
+
+//question 2 findIndexOf       search the exact name and return the project (fonction return int)
     string nameSearch;
     cout<< "Entrez le nom du projet recherché :";
     getline(cin, nameSearch);
@@ -164,7 +176,7 @@ int main() {
         cout << "Projet non trouvé."<<endl;
     }
 
-// Question 3
+// Question 3 Which yarn
 
 
     map<string, int> countYarnType = mapOfYarnType(projects);
@@ -177,7 +189,7 @@ int main() {
     }
 
 
-//question4
+//question4 Search final use
     string categorySearch;
     cout<< "Enter a catégory (Blanket) ";
     getline(cin, categorySearch);
@@ -190,7 +202,13 @@ int main() {
     }
 
 
-//question6
+//question 5
+
+
+
+
+
+//question6 search a project by partial name
     string stringToMatch;
     cout << "Enter the name or the partial name of a project : (Amigurumi, Crochet, Blanket...)";
     getline(cin, stringToMatch);
