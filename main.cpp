@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
+#include <map>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ struct projectCrochet{
     string yarnType;
     float hookSize;
     string stitchType;
-    float time;
+    int time;
     float price;
     string finalUse;
 };
@@ -67,7 +68,7 @@ void load(string fname, vector<projectCrochet> &data)
 }
 
 
-
+//question2
 void display(const vector<projectCrochet> &projects) {
     cout << left
          << setw(5)  << "Id"
@@ -104,11 +105,54 @@ int findIndexOf(const vector<projectCrochet> &projects, string name) {
 
 }
 
+//question3
+map<string, int> mapOfYarnType(vector<projectCrochet> &projects) {
+    map<string, int> yarnType;
+    vector<projectCrochet>::iterator iter = projects.begin();
+    while (iter != projects.end()) {
+        yarnType[iter->yarnType]++;
+
+        iter++;
+    }
+    return yarnType;
+}
+
+//question4
+
+vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, const string &category) {
+    vector<projectCrochet> filteredProjects;
+
+
+    for (size_t i = 0; i < projects.size(); i++) {
+        if (projects[i].finalUse == category) {
+            filteredProjects.push_back(projects[i]);
+        }
+    }
+
+    return filteredProjects;
+}
+
+//question6
+
+vector<projectCrochet> matchName(vector<projectCrochet> &projects, string stringToMatch) {
+    vector<projectCrochet> matchingProject;
+    for (auto iter = projects.begin(); iter != projects.end(); iter++) {
+        if (iter->name.find(stringToMatch) != string::npos) {
+            matchingProject.push_back(*iter);
+        }
+    }
+
+    return matchingProject;
+
+}
 
 int main() {
     vector<projectCrochet> projects;
     string filename = "./cmake-build-debug/data.csv";
     load(filename,projects);
+
+// Question 2:
+
     display(projects);
     string nameSearch;
     cout<< "Entrez le nom du projet recherché :";
@@ -122,6 +166,46 @@ int main() {
         cout << "Projet non trouvé."<<endl;
     }
 
+// Question 3
+
+
+    map<string, int> countYarnType = mapOfYarnType(projects);
+    cout << "Nombre de projets par type de fil :" << endl;
+
+
+    map<string, int>::iterator iter;
+    for (iter = countYarnType.begin(); iter != countYarnType.end(); iter++) {
+        cout << iter->first << " : " << iter->second << endl;
+    }
+
+
+//question4
+    string categorySearch;
+    cout<< "Enter a catégory (Blanket) ";
+    getline(cin, categorySearch);
+    vector<projectCrochet> filteredProjects = filterByFinalUse(projects, categorySearch); //
+    if (!filteredProjects.empty()) {
+        cout << "Projets correspondant à la catégorie '" << categorySearch << "' :" << endl;
+        display(filteredProjects); //
+    } else {
+        cout << "Aucun projet trouvé pour la catégorie '" << categorySearch << "'." << endl;
+    }
+
+
+//question6
+    string stringToMatch;
+    cout << "Enter the name or the partial name of a project : (Amigurumi, Crochet, Blanket...)";
+    getline(cin, stringToMatch);
+    vector<projectCrochet> projectsMatchName = matchName(projects, stringToMatch);
+    display(projectsMatchName);
+
 
     return 0;
+
+
+
+
+
 }
+
+
