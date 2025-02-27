@@ -275,6 +275,7 @@ int main() {
         cout << "6. Search for projects by partial name" << endl;
         cout << "7. Sort and display projects by descending price" << endl;
         cout << "-1. Quit" << endl;
+        cout << "****************" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
