@@ -93,9 +93,10 @@ void display(const vector<projectCrochet> &projects) {
 
     }
 }
-
-//question2 findIndexOf
-
+/*
+question2 findIndexOf(vector, string)
+This function take 2 parameters, a vector of projects and a name and will return the index of the project that match the name
+*/
 int findIndexOf(const vector<projectCrochet> &projects, string name) {
     for (size_t i = 0; i < projects.size(); i++) {
         if (projects[i].name == name) {
@@ -105,8 +106,10 @@ int findIndexOf(const vector<projectCrochet> &projects, string name) {
     return -1;
 
 }
-
-//question3
+/*
+question3  mapOfYarnType(vector)
+This function take a parameter vector and will return a map of a string and integer this map associate all the possible yarn type and the number of project using each yarn type
+*/
 map<string, int> mapOfYarnType(vector<projectCrochet> &projects) {
     map<string, int> yarnType;
     vector<projectCrochet>::iterator iter = projects.begin();
@@ -117,8 +120,10 @@ map<string, int> mapOfYarnType(vector<projectCrochet> &projects) {
     }
     return yarnType;
 }
-
-//question4  filterByFinalUse
+/*
+question4  filterByFinalUse
+This function will return all the project by the final use that the user enter
+*/
 
 vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, const string &category) {
     vector<projectCrochet> filteredProjects;
@@ -131,7 +136,9 @@ vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, 
     return filteredProjects;
 }
 
-//question5
+/*
+ this function will give the average time of all the project, the project that take the less of time and the project that take the most of time
+ */
 void analyzeTimeOfProjects(const vector<projectCrochet> &projects, int &avgTime, projectCrochet &minTimeProject, projectCrochet &maxTimeProject) {
 
     int totalTime = 0;
@@ -150,10 +157,11 @@ void analyzeTimeOfProjects(const vector<projectCrochet> &projects, int &avgTime,
     }
     avgTime = totalTime / projects.size();
 }
-
-//question6 matchName
-
-vector<projectCrochet> matchName(vector<projectCrochet> &projects, string stringToMatch) {
+/*
+question6 matchName
+this function will return the vector of projects that partially match the name the user enter
+*/
+vector<projectCrochet> matchName(vector<projectCrochet> &projects, string &stringToMatch) {
     vector<projectCrochet> matchingProject;
     for (size_t i = 0; i < projects.size(); i++) {
         if (projects[i].name.find(stringToMatch) != string::npos) {
@@ -163,18 +171,20 @@ vector<projectCrochet> matchName(vector<projectCrochet> &projects, string string
     return matchingProject;
 }
 
+/*
+question7 sortByPrice
+this fonction will display the data sorted by descending price
+*/
 
-//question7 sortByPrice
-//fonction
 void sortByPriceDescending(vector<projectCrochet> &projects) {
-    // Parcours la liste et trie en mettant les plus chers en premier
     for (int i = 0; i < projects.size(); i++) {
         for (int j = i + 1; j < projects.size(); j++) {
-            if (projects[i].price < projects[j].price) { // Si le projet j est plus cher, on échange
+            if (projects[i].price < projects[j].price) {
                 swap(projects[i], projects[j]);
             }
         }
     }
+    display(projects);
 }
 
 
@@ -189,22 +199,22 @@ int main() {
 
 //question 2 findIndexOf       search the exact name and return the project (fonction return int)
     string nameSearch;
-    cout<< "Entrez le nom du projet recherché :";
+    cout<< "Enter the exact name of the project that you search :";
     getline(cin, nameSearch);
     int index = findIndexOf(projects, nameSearch);
 
     if (index != -1) {
-        cout << "Projet trouvé :"<<endl;
+        cout << "Project found :"<<endl;
         display({projects[index]});
     } else {
-        cout << "Projet non trouvé."<<endl;
+        cout << "Project not found."<<endl;
     }
 
 // Question 3 Which yarn
 
 
     map<string, int> countYarnType = mapOfYarnType(projects);
-    cout << "Nombre de projets par type de fil :" << endl;
+    cout << "Number of projects by yarn type :" << endl;
 
 
     map<string, int>::iterator iter;
@@ -215,14 +225,14 @@ int main() {
 
 //question4 Search final use
     string categorySearch;
-    cout<< "Enter a catégory (Blanket) ";
+    cout<< "Enter a final use (Blanket,Baby,Home Decor,Accessory,Kitchen) ";
     getline(cin, categorySearch);
     vector<projectCrochet> filteredProjects = filterByFinalUse(projects, categorySearch); //
     if (!filteredProjects.empty()) {
-        cout << "Projets correspondant à la catégorie '" << categorySearch << "' :" << endl;
+        cout << "Project matching the final use " << categorySearch << "' :" << endl;
         display(filteredProjects); //
     } else {
-        cout << "Aucun projet trouvé pour la catégorie '" << categorySearch << "'." << endl;
+        cout << "Not project found for the final use " << categorySearch << "'." << endl;
     }
 
 
@@ -231,19 +241,17 @@ int main() {
     int avgTime;
     projectCrochet minProject, maxProject;
 
-    // Appel de la fonction avec passage des variables en référence
     analyzeTimeOfProjects(projects, avgTime, minProject, maxProject);
 
-    // Affichage des résultats
-    cout << "Temps moyen des projets : " << avgTime << " heures" << endl;
-    cout << "Projet le plus rapide : " << minProject.name << " (" << minProject.time << " heures)" << endl;
-    cout << "Projet le plus long : " << maxProject.name << " (" << maxProject.time << " heures)" << endl;
+    cout << "Average project time : " << avgTime << " hours" << endl;
+    cout << "Fastest project : " << minProject.name << " (" << minProject.time << " hours)" << endl;
+    cout << "Longest project : " << maxProject.name << " (" << maxProject.time << " hours)" << endl;
 
 
 
 
 
-//question6 search a project by partial name
+//question6 search a project by name or partial name
     string stringToMatch;
     cout << "Enter the name or the partial name of a project : (Amigurumi, Crochet, Blanket...)";
     getline(cin, stringToMatch);
@@ -252,9 +260,10 @@ int main() {
 
 
 //question 7
+    cout<<"List of project by descending price"<<endl;
     sortByPriceDescending(projects);
-    cout<<"Liste après le tri par prix décroissant"<<endl;
-    display(projects);
+
+
 
     return 0;
 
