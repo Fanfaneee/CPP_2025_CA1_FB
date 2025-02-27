@@ -132,10 +132,23 @@ vector<projectCrochet> filterByFinalUse(const vector<projectCrochet> &projects, 
 }
 
 //question5
-tuple<int, projectCrochet> analizeTimeOfProjects(vector<projectCrochet> &projects) {
-    vector<projectCrochet> lessTimeProject;
-    vector<projectCrochet> higherTimeProject;
-    vector<projectCrochet>::iterator iter = projects.begin();
+void analyzeTimeOfProjects(const vector<projectCrochet> &projects, int &avgTime, projectCrochet &minTimeProject, projectCrochet &maxTimeProject) {
+
+    int totalTime = 0;
+    minTimeProject = projects[0];
+    maxTimeProject = projects[0];
+    for (int i = 0; i < projects.size(); i++) {
+        totalTime += projects[i].time;
+
+        if (projects[i].time < minTimeProject.time) {
+            minTimeProject = projects[i];
+        }
+
+        if (projects[i].time > maxTimeProject.time) {
+            maxTimeProject = projects[i];
+        }
+    }
+    avgTime = totalTime / projects.size();
 }
 
 //question6 matchName
@@ -155,8 +168,8 @@ vector<projectCrochet> matchName(vector<projectCrochet> &projects, string string
 //fonction
 void sortByPriceDescending(vector<projectCrochet> &projects) {
     // Parcours la liste et trie en mettant les plus chers en premier
-    for (size_t i = 0; i < projects.size(); i++) {
-        for (size_t j = i + 1; j < projects.size(); j++) {
+    for (int i = 0; i < projects.size(); i++) {
+        for (int j = i + 1; j < projects.size(); j++) {
             if (projects[i].price < projects[j].price) { // Si le projet j est plus cher, on échange
                 swap(projects[i], projects[j]);
             }
@@ -214,6 +227,17 @@ int main() {
 
 
 //question 5
+
+    int avgTime;
+    projectCrochet minProject, maxProject;
+
+    // Appel de la fonction avec passage des variables en référence
+    analyzeTimeOfProjects(projects, avgTime, minProject, maxProject);
+
+    // Affichage des résultats
+    cout << "Temps moyen des projets : " << avgTime << " heures" << endl;
+    cout << "Projet le plus rapide : " << minProject.name << " (" << minProject.time << " heures)" << endl;
+    cout << "Projet le plus long : " << maxProject.name << " (" << maxProject.time << " heures)" << endl;
 
 
 
